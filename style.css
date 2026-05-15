@@ -6,8 +6,9 @@
 }
 
 body{
-    overflow:hidden;
+    width:100%;
     height:100vh;
+    overflow:hidden;
     background:#08121f;
     color:white;
 }
@@ -15,7 +16,9 @@ body{
 /* BACKGROUND */
 
 .background{
+
     position:fixed;
+
     width:100%;
     height:100%;
 
@@ -26,9 +29,11 @@ body{
     #08121f;
 
     animation:bgMove 10s infinite alternate ease-in-out;
+
 }
 
 @keyframes bgMove{
+
     0%{
         transform:scale(1);
         filter:hue-rotate(0deg);
@@ -38,11 +43,13 @@ body{
         transform:scale(1.1);
         filter:hue-rotate(25deg);
     }
+
 }
 
-/* GENERAL GLASS */
+/* GLASS */
 
 .glass{
+
     background:rgba(255,255,255,0.12);
 
     backdrop-filter:blur(24px);
@@ -51,29 +58,37 @@ body{
     border:1px solid rgba(255,255,255,0.2);
 
     box-shadow:
-    0 8px 30px rgba(0,0,0,0.3),
+    0 8px 30px rgba(0,0,0,0.35),
     inset 0 1px 1px rgba(255,255,255,0.3);
+
 }
 
 /* LOGIN */
 
 .login-screen{
+
     position:absolute;
+
     width:100%;
     height:100%;
 
     display:flex;
+
     justify-content:center;
     align-items:center;
 
-    z-index:10;
+    z-index:20;
 
     transition:0.6s;
+
 }
 
 .glass-card{
+
     width:360px;
+
     padding:40px;
+
     border-radius:32px;
 
     text-align:center;
@@ -86,20 +101,28 @@ body{
 
     box-shadow:
     0 8px 30px rgba(0,0,0,0.35),
-    inset 0 1px 1px rgba(255,255,255,0.4);
+    inset 0 1px 1px rgba(255,255,255,0.3);
+
 }
 
 h1{
-    font-size:48px;
-    margin-bottom:10px;
+
+    font-size:52px;
+
+    margin-bottom:12px;
+
 }
 
 p{
+
     color:rgba(255,255,255,0.8);
+
     margin-bottom:25px;
+
 }
 
 button{
+
     border:none;
 
     padding:14px 30px;
@@ -109,6 +132,7 @@ button{
     background:rgba(255,255,255,0.15);
 
     color:white;
+
     font-size:16px;
 
     cursor:pointer;
@@ -116,57 +140,82 @@ button{
     transition:0.25s;
 
     border:1px solid rgba(255,255,255,0.2);
+
 }
 
 button:hover{
+
     transform:translateY(-2px);
+
     background:rgba(255,255,255,0.25);
+
 }
 
 /* IOS UI */
 
 .ios-ui{
+
     position:absolute;
+
     width:100%;
     height:100%;
 
     opacity:0;
+
     pointer-events:none;
 
     transition:0.8s;
+
 }
 
 .ios-ui.show{
+
     opacity:1;
+
     pointer-events:auto;
+
 }
 
 /* TOPBAR */
 
 .topbar{
+
     position:absolute;
+
     top:20px;
+
     left:50%;
 
     transform:translateX(-50%);
 
-    width:90%;
+    width:92%;
+
     height:60px;
 
     border-radius:24px;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:0 24px;
 
-    z-index:5;
+}
+
+.status-icons{
+
+    display:flex;
+
+    gap:10px;
+
 }
 
 /* APPS */
 
 .apps{
+
     position:absolute;
 
     top:120px;
@@ -180,37 +229,50 @@ button:hover{
     gap:25px;
 
     padding:30px;
+
 }
 
 .app{
+
     height:120px;
 
     border-radius:30px;
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
 
     transition:0.25s;
+
 }
 
 .app:hover{
+
     transform:scale(1.05);
+
 }
 
 .icon{
+
     font-size:42px;
+
     margin-bottom:10px;
+
 }
 
 /* WIDGET */
 
 .widget{
+
     position:absolute;
 
     left:30px;
     right:30px;
+
     bottom:150px;
 
     height:140px;
@@ -218,14 +280,19 @@ button:hover{
     border-radius:32px;
 
     padding:25px;
+
 }
 
 .widget h2{
-    margin-bottom:10px;
+
+    margin-bottom:12px;
+
 }
 
 .music-bar{
+
     width:100%;
+
     height:10px;
 
     margin-top:20px;
@@ -235,43 +302,56 @@ button:hover{
     background:rgba(255,255,255,0.15);
 
     overflow:hidden;
+
 }
 
 .progress{
+
     width:60%;
     height:100%;
 
     background:white;
 
     border-radius:999px;
+
 }
 
 /* DOCK */
 
 .dock{
+
     position:absolute;
 
     bottom:30px;
+
     left:50%;
 
     transform:translateX(-50%);
 
     width:340px;
+
     height:85px;
 
     border-radius:30px;
 
     display:flex;
+
     justify-content:space-around;
+
     align-items:center;
+
 }
 
 .dock-icon{
+
     font-size:34px;
 
     transition:0.25s;
+
 }
 
 .dock-icon:hover{
+
     transform:translateY(-6px) scale(1.15);
+
 }
