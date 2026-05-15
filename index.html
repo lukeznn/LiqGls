@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liquid Glass</title>
+  <title>LiquidOS</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,12 +11,97 @@
 
   <div class="background"></div>
 
-  <div class="glass-card">
-    <h1>Liquid Glass</h1>
-    <p>Estilo inspirado no iOS</p>
+  <!-- LOGIN -->
+  <section class="login-screen active" id="login">
 
-    <button>Entrar</button>
-  </div>
+    <div class="glass-card">
+
+      <h1>LiquidOS</h1>
+      <p>Interface inspirada no iOS</p>
+
+      <button id="enterBtn">Entrar</button>
+
+    </div>
+
+  </section>
+
+  <!-- IOS UI -->
+  <section class="ios-ui" id="iosUI">
+
+    <!-- TOPBAR -->
+    <div class="topbar glass">
+
+      <div class="left">
+        09:41
+      </div>
+
+      <div class="right">
+        <span>📶</span>
+        <span>📡</span>
+        <span>🔋</span>
+      </div>
+
+    </div>
+
+    <!-- APP GRID -->
+    <div class="apps">
+
+      <div class="app glass">
+        <div class="icon">🎵</div>
+        <span>Música</span>
+      </div>
+
+      <div class="app glass">
+        <div class="icon">📷</div>
+        <span>Câmera</span>
+      </div>
+
+      <div class="app glass">
+        <div class="icon">💬</div>
+        <span>Mensagens</span>
+      </div>
+
+      <div class="app glass">
+        <div class="icon">🌎</div>
+        <span>Safari</span>
+      </div>
+
+      <div class="app glass">
+        <div class="icon">⚙️</div>
+        <span>Ajustes</span>
+      </div>
+
+      <div class="app glass">
+        <div class="icon">🖼️</div>
+        <span>Fotos</span>
+      </div>
+
+    </div>
+
+    <!-- WIDGET -->
+    <div class="widget glass">
+
+      <h2>Now Playing</h2>
+
+      <p>Liquid Dreams</p>
+
+      <div class="music-bar">
+        <div class="progress"></div>
+      </div>
+
+    </div>
+
+    <!-- DOCK -->
+    <div class="dock glass">
+
+      <div class="dock-icon">📞</div>
+      <div class="dock-icon">💬</div>
+      <div class="dock-icon">🌐</div>
+      <div class="dock-icon">🎵</div>
+
+    </div>
+
+  </section>
 
   <script src="script.js"></script>
 </body>
