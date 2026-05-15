@@ -1,15 +1,19 @@
-const enterBtn = document.getElementById("enterBtn");
+window.onload = () => {
 
-const login = document.getElementById("login");
+    const enterBtn = document.getElementById("enterBtn");
 
-const iosUI = document.getElementById("iosUI");
+    const login = document.getElementById("login");
 
-enterBtn.addEventListener("click", () => {
+    const iosUI = document.getElementById("iosUI");
 
-    login.style.opacity = "0";
+    enterBtn.addEventListener("click", () => {
 
-    login.style.pointerEvents = "none";
+        login.style.opacity = "0";
 
-    iosUI.classList.add("show");
+        login.style.pointerEvents = "none";
 
-});
+        iosUI.classList.add("show");
+
+    });
+
+};
