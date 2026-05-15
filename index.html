@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiquidOS</title>
 
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LiquidOS</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <div class="background"></div>
+    <div class="background"></div>
 
-  <!-- LOGIN -->
-  <section class="login-screen active" id="login">
+    <!-- LOGIN -->
 
-    <div class="glass-card">
+    <section class="login-screen" id="login">
 
-      <h1>LiquidOS</h1>
-      <p>Interface inspirada no iOS</p>
+        <div class="glass-card">
 
-      <button id="enterBtn">Entrar</button>
+            <h1>LiquidOS</h1>
 
-    </div>
+            <p>Interface inspirada no iOS</p>
 
-  </section>
+            <button id="enterBtn">
+                Entrar
+            </button>
 
-  <!-- IOS UI -->
-  <section class="ios-ui" id="iosUI">
+        </div>
 
-    <!-- TOPBAR -->
-    <div class="topbar glass">
+    </section>
 
-      <div class="left">
-        09:41
-      </div>
+    <!-- IOS UI -->
 
-      <div class="right">
-        <span>📶</span>
-        <span>📡</span>
-        <span>🔋</span>
-      </div>
+    <section class="ios-ui" id="iosUI">
 
-    </div>
+        <!-- TOPBAR -->
 
-    <!-- APP GRID -->
-    <div class="apps">
+        <div class="topbar glass">
 
-      <div class="app glass">
-        <div class="icon">🎵</div>
-        <span>Música</span>
-      </div>
+            <div>
+                09:41
+            </div>
 
-      <div class="app glass">
-        <div class="icon">📷</div>
-        <span>Câmera</span>
-      </div>
+            <div class="status-icons">
 
-      <div class="app glass">
-        <div class="icon">💬</div>
-        <span>Mensagens</span>
-      </div>
+                <span>📶</span>
+                <span>📡</span>
+                <span>🔋</span>
 
-      <div class="app glass">
-        <div class="icon">🌎</div>
-        <span>Safari</span>
-      </div>
+            </div>
 
-      <div class="app glass">
-        <div class="icon">⚙️</div>
-        <span>Ajustes</span>
-      </div>
+        </div>
 
-      <div class="app glass">
-        <div class="icon">🖼️</div>
-        <span>Fotos</span>
-      </div>
+        <!-- APPS -->
 
-    </div>
+        <div class="apps">
 
-    <!-- WIDGET -->
-    <div class="widget glass">
+            <div class="app glass">
+                <div class="icon">🎵</div>
+                <span>Música</span>
+            </div>
 
-      <h2>Now Playing</h2>
+            <div class="app glass">
+                <div class="icon">📷</div>
+                <span>Câmera</span>
+            </div>
 
-      <p>Liquid Dreams</p>
+            <div class="app glass">
+                <div class="icon">💬</div>
+                <span>Mensagens</span>
+            </div>
 
-      <div class="music-bar">
-        <div class="progress"></div>
-      </div>
+            <div class="app glass">
+                <div class="icon">🌎</div>
+                <span>Safari</span>
+            </div>
 
-    </div>
+            <div class="app glass">
+                <div class="icon">⚙️</div>
+                <span>Ajustes</span>
+            </div>
 
-    <!-- DOCK -->
-    <div class="dock glass">
+            <div class="app glass">
+                <div class="icon">🖼️</div>
+                <span>Fotos</span>
+            </div>
 
-      <div class="dock-icon">📞</div>
-      <div class="dock-icon">💬</div>
-      <div class="dock-icon">🌐</div>
-      <div class="dock-icon">🎵</div>
+        </div>
 
-    </div>
+        <!-- WIDGET -->
 
-  </section>
+        <div class="widget glass">
 
-  <script src="script.js"></script>
+            <h2>Now Playing</h2>
+
+            <p>Liquid Dreams</p>
+
+            <div class="music-bar">
+
+                <div class="progress"></div>
+
+            </div>
+
+        </div>
+
+        <!-- DOCK -->
+
+        <div class="dock glass">
+
+            <div class="dock-icon">📞</div>
+
+            <div class="dock-icon">💬</div>
+
+            <div class="dock-icon">🌐</div>
+
+            <div class="dock-icon">🎵</div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
