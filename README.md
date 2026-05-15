@@ -1,2 +1,0 @@
-# LiqGls
-Testando uns bglhasq
